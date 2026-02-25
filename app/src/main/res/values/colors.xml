@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    custom colors-->
+<!--    light mode-->
+    <color name="coffee_primary">#8e4d31</color>
+    <color name="coffee_secondary">#77574b</color>
+    <color name="coffee_surface">#685e30</color>
+
+<!--    dark mode-->
+    <color name="coffee_primary_dm">#ffdbce</color>
+    <color name="coffee_secondary_dm">#ffdbce</color>
+    <color name="coffee_surface_dm">#f1e3a8</color>
+</resources>

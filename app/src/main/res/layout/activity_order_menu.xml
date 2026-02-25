@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    tools:context=".OrderMenu">
+
+    <ImageView
+        android:id="@+id/BeanIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="2"
+
+        android:src="@drawable/outline_avocado_bean_24"
+        android:contentDescription="@string/app_logo"
+        />
+
+    <TextView
+        android:id="@+id/menu_title"
+        style="@style/AppTitle"
+        android:text="Place Order"
+        />
+
+    <TextView
+        android:id="@+id/roast_textview"
+        android:text="roast"
+        />
+
+    <RadioGroup
+        android:id="@+id/roast_radio">
+
+        <RadioButton
+            android:id="@+id/light_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light" />
+
+        <RadioButton
+            android:id="@+id/medium_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium" />
+
+        <RadioButton
+            android:id="@+id/dark_opt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/add_textview"
+        android:text="add-ins"
+        />
+    <CheckBox
+        android:text="Vanilla Creamer"
+        />
+
+</GridLayout>

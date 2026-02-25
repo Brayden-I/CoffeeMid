@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CoffeeMid" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/coffee_primary_dm</item>
+        <item name="colorSecondary">@color/coffee_secondary_dm</item>
+        <item name="colorSurface">@color/coffee_surface_dm</item>
+    </style>
+</resources>
