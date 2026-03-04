@@ -59,4 +59,12 @@
         android:text="Vanilla Creamer"
         />
 
+    <Button
+            android:id="@+id/submit_order"
+            android:layout_width="200dp"
+            android:layout_columnSpan="2"
+
+            android:text="Place Order"
+        />
+
 </GridLayout>
