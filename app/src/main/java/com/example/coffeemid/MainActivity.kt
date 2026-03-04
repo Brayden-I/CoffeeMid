@@ -1,6 +1,8 @@
 package com.example.coffeemid
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +17,20 @@ class MainActivity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val OrderBtn = findViewById<Button>(R.id.OrderBtn)
+        val SettingsBtn = findViewById<Button>(R.id.SettingsBtn)
+
+        OrderBtn.setOnClickListener {
+            val intent = Intent(this, OrderMenu::class.java)
+            startActivity(intent)
+        }
+
+        SettingsBtn.setOnClickListener {
+            print("not implemented")
+//            val intent = Intent(this, Settings::class.java)
+//            startActivity(intent)
         }
     }
 }

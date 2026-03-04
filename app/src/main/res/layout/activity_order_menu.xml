@@ -1,70 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="2"
-    tools:context=".OrderMenu">
+    android:fillViewport="true"
+    >
 
-    <ImageView
-        android:id="@+id/BeanIcon"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_columnSpan="2"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:columnCount="2"
+        tools:context=".OrderMenu">
 
-        android:src="@drawable/outline_avocado_bean_24"
-        android:contentDescription="@string/app_logo"
-        />
-
-    <TextView
-        android:id="@+id/menu_title"
-        style="@style/AppTitle"
-        android:text="Place Order"
-        />
-
-    <TextView
-        android:id="@+id/roast_textview"
-        android:text="roast"
-        />
-
-    <RadioGroup
-        android:id="@+id/roast_radio">
-
-        <RadioButton
-            android:id="@+id/light_opt"
-            android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/BeanIcon"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Light" />
+            android:layout_columnSpan="2"
 
-        <RadioButton
-            android:id="@+id/medium_opt"
-            android:layout_width="wrap_content"
+            android:src="@drawable/outline_avocado_bean_24"
+            android:contentDescription="@string/app_logo"
+            />
+
+        <TextView
+            android:id="@+id/menu_title"
+            style="@style/AppTitle"
+            android:text="Place Order"
+            />
+
+        <TextView
+            android:id="@+id/roast_textview"
+            android:layout_gravity="center_vertical"
+            android:text="roast"
+            />
+
+        <RadioGroup
+            android:id="@+id/roast_radio">
+
+            <RadioButton
+                android:id="@+id/light_opt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light" />
+
+            <RadioButton
+                android:id="@+id/medium_opt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium" />
+
+            <RadioButton
+                android:id="@+id/dark_opt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark" />
+        </RadioGroup>
+
+        <!--    ADD INS-->
+        <TextView
+            android:id="@+id/addin_textview"
+            android:layout_gravity="center_vertical"
+            android:text="add-ins"
+            />
+
+        <GridLayout
+            android:id="@+id/addin_Layout"
+            android:layout_width="match_parent"
+            android:columnCount="3">
+
+            <TextView
+                android:id="@+id/Dairy_Section_textview"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="3"
+
+                android:text="Choose Creamer"/>
+            <CheckBox android:id="@+id/dairyCreamer" android:text="Dairy Creamer"/>
+            <CheckBox android:id="@+id/nondairyCreamer" android:text="Non-Dairy Creamer"/>
+            <CheckBox android:id="@+id/hahCreamer" android:text="half-half"/>
+
+            <TextView
+                android:id="@+id/Pumps_Section_textview"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="3"
+
+                android:text="Choose pumps"/>
+            <CheckBox android:id="@+id/vanillaPump" android:text="Vanilla Flavor"/>
+            <CheckBox android:id="@+id/hazlePump" android:text="Hazlenut Flavor"/>
+            <CheckBox android:id="@+id/coconutPump" android:text="Coconut Flavor"/>
+            <CheckBox android:id="@+id/rasberryPump" android:text="Rasberry Flavor"/>
+            <CheckBox android:id="@+id/mangoPump" android:text="Mango Flavor"/>
+            <CheckBox android:id="@+id/chocoPump" android:text="Chocolate Flavor"/>
+
+            <TextView
+                android:id="@+id/topping_Section_textview"
+                android:layout_width="match_parent"
+                android:layout_columnSpan="3"
+
+                android:text="Choose toppings"/>
+            <CheckBox android:id="@+id/whipTopping" android:text="Whipped cream"/>
+            <CheckBox android:id="@+id/foamTopping" android:text="Cold foam"/>
+            <CheckBox android:id="@+id/caramelTopping" android:text="Caramel syrup"/>
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/AdditionalNotes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Medium" />
+            android:layout_columnSpan="2"
 
-        <RadioButton
-            android:id="@+id/dark_opt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Dark" />
-    </RadioGroup>
+            android:text="Additional Notes"/>
+        <EditText
+            android:id="@+id/noteEditor"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_columnSpan="2"/>
 
-    <TextView
-        android:id="@+id/add_textview"
-        android:text="add-ins"
-        />
-    <CheckBox
-        android:text="Vanilla Creamer"
-        />
-
-    <Button
+        <Button
             android:id="@+id/submit_order"
             android:layout_width="200dp"
             android:layout_columnSpan="2"
 
-            android:text="Place Order"
-        />
+            android:layout_gravity="center_horizontal"
 
-</GridLayout>
+            android:text="Place Order"
+            />
+
+    </GridLayout>
+</ScrollView>
