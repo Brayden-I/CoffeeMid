@@ -19,15 +19,15 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val OrderBtn = findViewById<Button>(R.id.OrderBtn)
-        val SettingsBtn = findViewById<Button>(R.id.SettingsBtn)
+        val orderBtn = findViewById<Button>(R.id.OrderBtn)
+        val settingsBtn = findViewById<Button>(R.id.SettingsBtn)
 
-        OrderBtn.setOnClickListener {
+        orderBtn.setOnClickListener {
             val intent = Intent(this, OrderMenu::class.java)
             startActivity(intent)
         }
 
-        SettingsBtn.setOnClickListener {
+        settingsBtn.setOnClickListener {
             print("not implemented")
 //            val intent = Intent(this, Settings::class.java)
 //            startActivity(intent)

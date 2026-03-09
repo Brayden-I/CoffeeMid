@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -13,14 +13,127 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
 
-        android:text="Thank you for ordering!"/>
+        android:text="Thank you for ordering!" />
 
     <TextView
         android:id="@+id/summary_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:layout_below="@id/menu_title"
 
-        android:text="Order summary"/>
-</RelativeLayout>
+        android:text="Order summary" />
+
+<!--    Roast-->
+    <TextView
+        android:text="Roast"
+        />
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Roast level"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/roast_textview"/>
+    </TableRow>
+
+<!--    Creamer-->
+    <TextView
+        android:text="Creamer"
+        />
+    <TableRow>
+        <TextView
+            android:text="Dairy"/>
+        <TextView
+            android:id="@+id/dairyCreamer_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Non-Dairy"/>
+        <TextView
+            android:id="@+id/nondairyCreamer_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Half &amp; Half"/>
+        <TextView
+            android:id="@+id/hahCreamer_textview"/>
+    </TableRow>
+<!--    // Pumps-->
+    <TextView
+        android:text="Pumps"
+        />
+    <TableRow>
+        <TextView
+            android:text="Vanilla pump"/>
+        <TextView
+            android:id="@+id/vanillaPump_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Hazle_pump"/>
+        <TextView
+            android:id="@+id/hazlePump_textview"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Coconut pump"/>
+        <TextView
+            android:id="@+id/coconutPump_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Rasberry pump"/>
+        <TextView
+            android:id="@+id/rasberryPump_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Mango pump"/>
+        <TextView
+            android:id="@+id/mangoPump_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Chocolate pump"/>
+        <TextView
+            android:id="@+id/chocoPump_textview"/>
+    </TableRow>
+
+<!--    Toppings-->
+    <TextView
+        android:text="Toppings"/>
+
+    <TableRow>
+        <TextView
+            android:text="Whipped topping"/>
+        <TextView
+            android:id="@+id/whipTopping_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Foam topping"/>
+        <TextView
+            android:id="@+id/foamTopping_textview"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:text="Caramel topping"/>
+        <TextView
+            android:id="@+id/caramelTopping_textview"/>
+    </TableRow>
+
+<!--    Note-->
+    <TableRow>
+        <TextView
+            android:text="Additional Note"/>
+        <TextView
+            android:id="@+id/AdditionalNote_textview"/>
+    </TableRow>
+
+<!--    Back button-->
+    <Button
+        android:id="@+id/BackBtn"
+        android:text="Back to main screen"/>
+</TableLayout>

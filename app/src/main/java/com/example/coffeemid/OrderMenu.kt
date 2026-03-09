@@ -1,5 +1,6 @@
 package com.example.coffeemid
 
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -63,7 +64,7 @@ class OrderMenu : AppCompatActivity() {
             intent.putExtra("DAIRYCREAMER", dairyCreamer.isChecked)
             intent.putExtra("NONDAIRYCREAMER", nondairyCreamer.isChecked)
             intent.putExtra("HAHDAIRYCREAMER", hahCreamer.isChecked)
-            // Pump
+            // Pumps
             intent.putExtra("VANILLAPUMP", vanillaPump.isChecked)
             intent.putExtra("HAZLEPUMP", hazlePump.isChecked)
             intent.putExtra("COCONUTPUMP", coconutPump.isChecked)
@@ -79,7 +80,7 @@ class OrderMenu : AppCompatActivity() {
             intent.putExtra("NOTES", noteEditor.text.toString())
 
             // Send the intent
-            startActivity(intent)
+            startActivity(orderIntent)
             finish()
         }
     }
