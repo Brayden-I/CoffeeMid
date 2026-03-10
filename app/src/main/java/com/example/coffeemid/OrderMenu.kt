@@ -59,25 +59,25 @@ class OrderMenu : AppCompatActivity() {
 
             val orderIntent = Intent(this, OrderPlaced::class.java)
             //Roast
-            intent.putExtra("ROAST", roastValue)
+            orderIntent.putExtra("ROAST", roastValue)
             // Creamers
-            intent.putExtra("DAIRYCREAMER", dairyCreamer.isChecked)
-            intent.putExtra("NONDAIRYCREAMER", nondairyCreamer.isChecked)
-            intent.putExtra("HAHDAIRYCREAMER", hahCreamer.isChecked)
+            orderIntent.putExtra("DAIRYCREAMER", dairyCreamer.isChecked)
+            orderIntent.putExtra("NONDAIRYCREAMER", nondairyCreamer.isChecked)
+            orderIntent.putExtra("HAHDAIRYCREAMER", hahCreamer.isChecked)
             // Pumps
-            intent.putExtra("VANILLAPUMP", vanillaPump.isChecked)
-            intent.putExtra("HAZLEPUMP", hazlePump.isChecked)
-            intent.putExtra("COCONUTPUMP", coconutPump.isChecked)
-            intent.putExtra("RASBERRYPUMP", rasberryPump.isChecked)
-            intent.putExtra("MANGOPUMP", mangoPump.isChecked)
-            intent.putExtra("CHOCOPUMP", chocoPump.isChecked)
+            orderIntent.putExtra("VANILLAPUMP", vanillaPump.isChecked)
+            orderIntent.putExtra("HAZLEPUMP", hazlePump.isChecked)
+            orderIntent.putExtra("COCONUTPUMP", coconutPump.isChecked)
+            orderIntent.putExtra("RASBERRYPUMP", rasberryPump.isChecked)
+            orderIntent.putExtra("MANGOPUMP", mangoPump.isChecked)
+            orderIntent.putExtra("CHOCOPUMP", chocoPump.isChecked)
             // toppings
-            intent.putExtra("WHIPTOPPING", whipTopping.isChecked)
-            intent.putExtra("FOAMTOPPING", foamTopping.isChecked)
-            intent.putExtra("CARAMELTOPPING", caramelTopping.isChecked)
+            orderIntent.putExtra("WHIPTOPPING", whipTopping.isChecked)
+            orderIntent.putExtra("FOAMTOPPING", foamTopping.isChecked)
+            orderIntent.putExtra("CARAMELTOPPING", caramelTopping.isChecked)
 
             // Note box
-            intent.putExtra("NOTES", noteEditor.text.toString())
+            orderIntent.putExtra("NOTES", noteEditor.text.toString())
 
             // Send the intent
             startActivity(orderIntent)
