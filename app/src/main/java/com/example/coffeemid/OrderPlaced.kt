@@ -42,7 +42,7 @@ class OrderPlaced : AppCompatActivity() {
         val foamTopping = findViewById<TextView>(R.id.foamTopping_textview)
         val caramelTopping = findViewById<TextView>(R.id.caramelTopping_textview)
 
-        val notes = findViewById<TextView>()
+        val notes = findViewById<TextView>(R.id.AdditionalNote_textview)
         // GET VALUES
         // Roast
         val roastVal = intent.getStringExtra("ROAST");
@@ -61,9 +61,9 @@ class OrderPlaced : AppCompatActivity() {
         val chocoPumpVal = intent.getBooleanExtra("CHOCOPUMP", false)
 
         // toppings
-        val whipToppingVal = intent.getBooleanExtra("TOPPING", false)
-        val foamToppingVal = intent.getBooleanExtra("TOPPING", false)
-        val caramelToppingVal = intent.getBooleanExtra("TOPPING", false)
+        val whipToppingVal = intent.getBooleanExtra("WHIPTOPPING", false)
+        val foamToppingVal = intent.getBooleanExtra("FOAMTOPPING", false)
+        val caramelToppingVal = intent.getBooleanExtra("CARAMELTOPPING", false)
 
         // SET LABELS
         roast_textview.text = roastVal
