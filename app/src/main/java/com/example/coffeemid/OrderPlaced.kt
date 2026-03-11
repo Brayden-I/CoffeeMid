@@ -20,6 +20,7 @@ class OrderPlaced : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         // GET ELEMENTS
         // Roast
         val roast_textview = findViewById<TextView>(R.id.roast_textview)
@@ -43,6 +44,7 @@ class OrderPlaced : AppCompatActivity() {
         val caramelTopping = findViewById<TextView>(R.id.caramelTopping_textview)
 
         val notes = findViewById<TextView>(R.id.AdditionalNote_textview)
+
         // GET VALUES
         // Roast
         val roastVal = intent.getStringExtra("ROAST");
@@ -91,10 +93,11 @@ class OrderPlaced : AppCompatActivity() {
 
         // Notes
         val notesVal = intent.getStringExtra("NOTES")
-        notes.text = if (!notesVal.isNullOrBlank()) notesVal else "None"
+        notes.text = if (notesVal.isNullOrBlank()) "None" else notesVal
 
         // Back button
         val backBtn = findViewById<Button>(R.id.BackBtn)
+        // Listener
         backBtn.setOnClickListener {
             finish()
         }
