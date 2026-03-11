@@ -8,6 +8,8 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.RadioButton
 import android.widget.RadioGroup
+import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -29,6 +31,8 @@ class OrderMenu : AppCompatActivity() {
         val RoastGroup = findViewById<RadioGroup>(R.id.roast_radio)
         val roastSelectId = RoastGroup.checkedRadioButtonId // Get the id of selected button
         val roastValue = findViewById<Button>(roastSelectId)?.text.toString() // Get the text of the selected button
+        val validationMsg = findViewById<TextView>(R.id.validation_textview)
+
 
         // Creamer
         val dairyCreamer = findViewById<CheckBox>(R.id.dairyCreamer)
@@ -58,7 +62,18 @@ class OrderMenu : AppCompatActivity() {
         OrderBtn.setOnClickListener {
             // Read roast here so the selection is captured at click time
             val roastSelectId = RoastGroup.checkedRadioButtonId
-            val roastValue = if (roastSelectId != -1) findViewById<RadioButton>(roastSelectId)?.text.toString() else "None"
+
+            // VALIDATION: roast is required
+            if (roastSelectId == -1) {
+                validationMsg.text = "Please select a roast level before placing your order."
+                Toast.makeText(this, "Please select a roast level.", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            // Clear any previous validation message
+            validationMsg.text = ""
+
+            val roastValue = findViewById<RadioButton>(roastSelectId)?.text.toString()
 
             val orderIntent = Intent(this, OrderPlaced::class.java)
             //Roast

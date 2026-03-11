@@ -60,6 +60,17 @@
                 android:text="Dark" />
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/validation_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:textColor="#CC0000"
+            android:textStyle="bold"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="" />
+
         <!--    ADD INS-->
         <TextView
             android:id="@+id/addin_textview"
