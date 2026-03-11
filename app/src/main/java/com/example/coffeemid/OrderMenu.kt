@@ -56,6 +56,9 @@ class OrderMenu : AppCompatActivity() {
 
         // LISTENERS
         OrderBtn.setOnClickListener {
+            // Read roast here so the selection is captured at click time
+            val roastSelectId = RoastGroup.checkedRadioButtonId
+            val roastValue = if (roastSelectId != -1) findViewById<RadioButton>(roastSelectId)?.text.toString() else "None"
 
             val orderIntent = Intent(this, OrderPlaced::class.java)
             //Roast
