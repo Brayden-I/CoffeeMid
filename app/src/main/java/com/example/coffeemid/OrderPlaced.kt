@@ -68,6 +68,31 @@ class OrderPlaced : AppCompatActivity() {
         // SET LABELS
         roast_textview.text = roastVal
 
+        // Helper to display yes/no
+        fun boolToYesNo(value: Boolean) = if (value) "Yes" else "No"
+
+        // Creamers
+        dairyCreamer_textview.text = boolToYesNo(dairyCreamerVal)
+        nondairyCreamer.text = boolToYesNo(nondairyCreamerVal)
+        hahCreamer.text = boolToYesNo(hahdairyCreamerVal)
+
+        // Pumps
+        vanillaPump.text = boolToYesNo(vanillaPumpVal)
+        hazlePump.text = boolToYesNo(hazlePumpVal)
+        coconutPump.text = boolToYesNo(coconutPumpVal)
+        rasberryPump.text = boolToYesNo(rasberryPumpVal)
+        mangoPump.text = boolToYesNo(mangoPumpVal)
+        chocoPump.text = boolToYesNo(chocoPumpVal)
+
+        // Toppings
+        whipTopping.text = boolToYesNo(whipToppingVal)
+        foamTopping.text = boolToYesNo(foamToppingVal)
+        caramelTopping.text = boolToYesNo(caramelToppingVal)
+
+        // Notes
+        val notesVal = intent.getStringExtra("NOTES")
+        notes.text = if (!notesVal.isNullOrBlank()) notesVal else "None"
+
 
     }
 }
