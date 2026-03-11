@@ -3,4 +3,45 @@
     <string name="app_logo">App_Logo</string>
     <string name="place_order">Place Order</string>
     <string name="change_theme">Change theme</string>
+
+    <!--    Order_menu-->
+    <string name="place_order_menu">Place Order</string>
+    <string name="roast_menu">Roast</string>
+    <string name="light_menu">Light</string>
+    <string name="medium_menu">Medium</string>
+    <string name="dark_menu">Dark</string>
+    <string name="add_ins_menu">Add-Ins</string>
+    <string name="choose_creamer_menu">Choose Creamer</string>
+    <string name="dairy_creamer">Dairy Creamer</string>
+    <string name="non_dairy_creamer">Non-Dairy Creamer</string>
+    <string name="half_half">half-half</string>
+    <string name="choose_pumps_menu">Choose pumps</string>
+    <string name="vanilla_flavor">Vanilla Flavor</string>
+    <string name="hazlenut_flavor">Hazlenut Flavor</string>
+    <string name="coconut_flavor">Coconut Flavor</string>
+    <string name="rasberry_flavor">Rasberry Flavor</string>
+    <string name="mango_flavor">Mango Flavor</string>
+    <string name="chocolate_flavor">Chocolate Flavor</string>
+    <string name="choose_toppings_menu">Choose toppings</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="cold_foam">Cold foam</string>
+    <string name="caramel_syrup">Caramel syrup</string>
+    <string name="additional_notes_menu">Additional Notes</string>
+
+<!--    Order_placed-->
+    <string name="thank_you_for_ordering_screen">Thank you for ordering!</string>
+    <string name="various_coffee_beans_in_cups">Various coffee beans in cups</string>
+    <string name="order_summary_screen">Order summary</string>
+    <string name="roast_ordered">Roast</string>
+    <string name="roast_level_ordered">Roast level</string>
+    <string name="creamer_ordered">Creamer</string>
+    <string name="dairy_ordered">Dairy</string>
+    <string name="non_dairy_ordered">Non-Dairy</string>
+    <string name="half_amp_half_ordered"><![CDATA[Half & Half]]></string>
+    <string name="pumps_ordered">Pumps</string>
+    <string name="toppings_ordered">Toppings</string>
+    <string name="additional_note_ordered">Additional Note</string>
+    <string name="back_to_main_screen">Back to main screen</string>
+
+
 </resources>
