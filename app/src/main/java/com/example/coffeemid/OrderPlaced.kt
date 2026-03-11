@@ -93,6 +93,10 @@ class OrderPlaced : AppCompatActivity() {
         val notesVal = intent.getStringExtra("NOTES")
         notes.text = if (!notesVal.isNullOrBlank()) notesVal else "None"
 
-
+        // Back button
+        val backBtn = findViewById<Button>(R.id.BackBtn)
+        backBtn.setOnClickListener {
+            finish()
+        }
     }
 }
