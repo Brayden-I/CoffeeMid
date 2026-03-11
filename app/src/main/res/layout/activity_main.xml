@@ -12,6 +12,7 @@
         android:id="@+id/BeanIcon"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/HeaderLogo"
 
         android:src="@drawable/outline_avocado_bean_24"
         android:contentDescription="@string/app_logo"
@@ -20,9 +21,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        style="@style/AppTitle"
 
         android:textAlignment="center"
         android:text="Welcome to Coffee Shop!" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/coffee"
+        />
 
     <Button
         android:id="@+id/OrderBtn"

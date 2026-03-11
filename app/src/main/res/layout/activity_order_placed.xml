@@ -12,128 +12,164 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        style="@style/AppTitle"
 
-        android:text="Thank you for ordering!" />
+        android:text="@string/thank_you_for_ordering_screen" />
+
+<!--    Image-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:contentDescription="@string/various_coffee_beans_in_cups"
+        android:src="@drawable/coffee_pour"
+        />
 
     <TextView
         android:id="@+id/summary_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
+        style="@style/Header"
 
-        android:text="Order summary" />
+        android:text="@string/order_summary_screen" />
 
 <!--    Roast-->
     <TextView
-        android:text="Roast"
-        />
+        android:text="@string/roast_ordered"
+        style="@style/Header2"/>
 
     <TableRow>
         <TextView
-            android:layout_width="match_parent"
-            android:text="Roast level"/>
+            android:text="@string/roast_level_ordered"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:layout_width="match_parent"
-            android:id="@+id/roast_textview"/>
+            android:id="@+id/roast_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
 
 <!--    Creamer-->
     <TextView
-        android:text="Creamer"
-        />
+        android:text="@string/creamer_ordered"
+        style="@style/Header2"/>
     <TableRow>
         <TextView
-            android:text="Dairy"/>
+            android:text="@string/dairy_ordered"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/dairyCreamer_textview"/>
+            android:id="@+id/dairyCreamer_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Non-Dairy"/>
+            android:text="@string/non_dairy_ordered"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/nondairyCreamer_textview"/>
+            android:id="@+id/nondairyCreamer_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Half &amp; Half"/>
+            android:text="@string/half_amp_half_ordered"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/hahCreamer_textview"/>
+            android:id="@+id/hahCreamer_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
 <!--    // Pumps-->
     <TextView
-        android:text="Pumps"
-        />
+        android:text="@string/pumps_ordered"
+        style="@style/Header2"/>
     <TableRow>
         <TextView
-            android:text="Vanilla pump"/>
+            android:text="@string/vanilla_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/vanillaPump_textview"/>
+            android:id="@+id/vanillaPump_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Hazle_pump"/>
+            android:text="@string/hazlenut_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
             android:id="@+id/hazlePump_textview"
-            />
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Coconut pump"/>
+            android:text="@string/coconut_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/coconutPump_textview"/>
+            android:id="@+id/coconutPump_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Rasberry pump"/>
+            android:text="@string/rasberry_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/rasberryPump_textview"/>
+            android:id="@+id/rasberryPump_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Mango pump"/>
+            android:text="@string/mango_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/mangoPump_textview"/>
+            android:id="@+id/mangoPump_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Chocolate pump"/>
+            android:text="@string/chocolate_flavor"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/chocoPump_textview"/>
+            android:id="@+id/chocoPump_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
 
 <!--    Toppings-->
     <TextView
-        android:text="Toppings"/>
+        android:text="@string/toppings_ordered"
+        style="@style/Header2"/>
 
     <TableRow>
         <TextView
-            android:text="Whipped topping"/>
+            android:text="@string/whipped_cream"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/whipTopping_textview"/>
+            android:id="@+id/whipTopping_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Foam topping"/>
+            android:text="@string/cold_foam"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/foamTopping_textview"/>
+            android:id="@+id/foamTopping_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
     <TableRow>
         <TextView
-            android:text="Caramel topping"/>
+            android:text="@string/caramel_syrup"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/caramelTopping_textview"/>
+            android:id="@+id/caramelTopping_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
 
 <!--    Note-->
     <TableRow>
         <TextView
-            android:text="Additional Note"/>
+            android:text="@string/additional_note_ordered"
+            android:textColor="?attr/colorSecondary"/>
         <TextView
-            android:id="@+id/AdditionalNote_textview"/>
+            android:id="@+id/AdditionalNote_textview"
+            android:textColor="?attr/colorPrimary"/>
     </TableRow>
 
 <!--    Back button-->
     <Button
         android:id="@+id/BackBtn"
-        android:text="Back to main screen"/>
+        android:text="@string/back_to_main_screen"/>
 </TableLayout>
