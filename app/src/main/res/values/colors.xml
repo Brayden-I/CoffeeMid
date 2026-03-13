@@ -4,13 +4,26 @@
     <color name="white">#FFFFFFFF</color>
 
 <!--    custom colors-->
+
+<!--    Coffee-->
 <!--    light mode-->
     <color name="coffee_primary">#8e4d31</color>
     <color name="coffee_secondary">#77574b</color>
-    <color name="coffee_surface">#685e30</color>
+    <color name="coffee_surface">#A0794F</color>
 
 <!--    dark mode-->
     <color name="coffee_primary_dm">#ffdbce</color>
     <color name="coffee_secondary_dm">#ffdbce</color>
     <color name="coffee_surface_dm">#f1e3a8</color>
+
+<!--    Tea-->
+    <!--    light mode-->
+    <color name="tea_primary">#845416</color>
+    <color name="tea_secondary">#725a41</color>
+    <color name="tea_surface">#8C9E5B</color>
+
+    <!--    dark mode-->
+    <color name="tea_primary_dm">#fbba73</color>
+    <color name="tea_secondary_dm">#e0c1a3</color>
+    <color name="tea_surface_dm">#becc9c</color>
 </resources>

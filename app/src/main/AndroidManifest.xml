@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_avocado_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CoffeeMid">
+        android:theme="@style/Base.Theme.Tea">
         <activity
             android:name=".OrderPlaced"
             android:exported="false" />

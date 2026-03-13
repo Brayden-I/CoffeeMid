@@ -6,5 +6,11 @@
         <item name="colorSurface">@color/coffee_surface</item>
     </style>
 
+    <style name="Base.Theme.Tea" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/tea_primary</item>
+        <item name="colorSecondary">@color/tea_secondary</item>
+        <item name="colorSurface">@color/tea_surface</item>
+    </style>
+
     <style name="Theme.CoffeeMid" parent="Base.Theme.CoffeeMid" />
 </resources>

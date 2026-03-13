@@ -5,4 +5,10 @@
         <item name="colorSecondary">@color/coffee_secondary_dm</item>
         <item name="colorSurface">@color/coffee_surface_dm</item>
     </style>
+
+    <style name="Base.Theme.Tea" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/tea_primary_dm</item>
+        <item name="colorSecondary">@color/tea_secondary_dm</item>
+        <item name="colorSurface">@color/tea_surface_dm</item>
+    </style>
 </resources>
