@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -97,9 +98,13 @@ class OrderPlaced : AppCompatActivity() {
 
         // Back button
         val backBtn = findViewById<Button>(R.id.BackBtn)
+
         // Listener
         backBtn.setOnClickListener {
             finish()
         }
+
+        // Thank you toast popup
+        Toast.makeText(this, "Thank you for ordering!", Toast.LENGTH_SHORT).show()
     }
 }
