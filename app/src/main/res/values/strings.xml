@@ -42,6 +42,7 @@
     <string name="toppings_ordered">Toppings</string>
     <string name="additional_note_ordered">Additional Note</string>
     <string name="back_to_main_screen">Back to main screen</string>
+    <string name="coffee_ground_desc">Various coffee beans and grounds</string>
 
 
 </resources>
