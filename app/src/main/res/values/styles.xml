@@ -5,8 +5,8 @@
     <style name="HeaderLogo">
         <item name="android:layout_width">80dp</item>
         <item name="android:layout_height">80dp</item>
-        <item name="android:layout_gravity">center_horizontal</item>s
-        <item name="color">?attr/colorPrimary</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="tint">?attr/colorPrimary</item>
     </style>
 
 <!--    TEXT STYLES-->
