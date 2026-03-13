@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         settingsBtn.setOnClickListener {
             print("not implemented")
-//            val intent = Intent(this, Settings::class.java)
+//            val intent = Intent(this, Settings: SettingsMenu:class.java)
 //            startActivity(intent)
         }
     }
